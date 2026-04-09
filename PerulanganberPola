@@ -1,0 +1,35 @@
+/*
+ * Nama : Rahmi Aulia
+ * NIM  : 2501083021
+ * Desk : Program perulangan menggunakan pola matriks
+ */
+package com.mycompany.rahmiaulia_pbo;
+
+/**
+ *
+ * @author Rahmi Aulia
+ */
+import java.util.Scanner;
+public class PerulanganberPola {
+     public static void main(String[] args) {
+        int i, j, n = 5;
+        for(i = 1; i<=n; i++){
+            for(j=1; j<=n; j++)
+                {
+                    if(i == 1 || i == n)
+                    {
+                        System.out.print(" 0 ");
+                    }
+                    else if(i == j ){
+                        System.out.print(" 0 ");
+                    }
+                    else
+                    {
+                        System.out.print(" x ");
+                    }
+                }
+            System.out.println();
+        }
+    }
+}
+
