@@ -1,0 +1,34 @@
+/*
+ * Nama : Rahmi Aulia
+ * NIM  : 2501083021
+ * Desk : menginputkan penghasilan dina,berapa total uang dari halaman tersisa,
+total uang yang didapat,dan sisa halaman
+*/
+package com.mycompany.rahmiaulia_pbo;
+
+/**
+ *
+ * @author Rahmi Aulia
+ */
+import java.util.Scanner;
+public class penghasilandina {
+    public static void main(String[] args ){
+        Scanner input = new Scanner (System.in);
+        int totalHalaman = 50;
+        int hargaPerHalaman = 15000;
+        
+        System.out.print("Masukan jumlah halaman yang sudah dikerjakan : ");
+        int X = input.nextInt();
+        if (X >= 0 && X > 50) {
+            System.out.println("Input tidak valid!");
+            } else {
+           int uangDiterima = X * 15000;
+           int sisaHalaman = 50 - X;
+           int uangSisa = sisaHalaman * 15000;
+        
+           System.out.println("total Uang yang sudah diterima: Rp " + uangDiterima);
+           System.out.println("Sisa halaman: " + sisaHalaman);
+           System.out.println("total Uang yang masih bisa didapat: Rp " + uangSisa);
+        }
+    }
+}   
